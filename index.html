@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Isaac Abdella — Business Analyst &amp; Full-Stack / ML Builder</title>
+<meta name="description" content="Portfolio of Isaac Abdella: business systems analyst and full-stack developer who ships production MERN + ML systems. Real projects, real data, STAR-structured case studies." />
+<meta property="og:title" content="Isaac Abdella — Portfolio" />
+<meta property="og:description" content="Business analyst turned full-stack + ML builder. Four real, documented projects with live demos and honest skill range." />
+<meta property="og:type" content="website" />
+
+<!-- Fonts: Cabinet Grotesk (display) + Satoshi (body) via Fontshare, JetBrains Mono via Google -->
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./base.css" />
+<link rel="stylesheet" href="./style.css" />
+
+<!-- Favicon: inline SVG monogram -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%234338CA'/%3E%3Cpath d='M13 28V12h4v10.2L26 12h5l-8.5 9.6L31.5 28H26l-6.2-8.4L15 24.5V28h-2z' fill='white'/%3E%3C/svg%3E" />
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+
+<a href="#main" class="sr-only">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Isaac Abdella home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect width="40" height="40" rx="9" fill="currentColor"/>
+        <path d="M13 28V12h4v10.2L26 12h5l-8.5 9.6L31.5 28H26l-6.2-8.4L15 24.5V28h-2z" fill="var(--color-bg)"/>
+      </svg>
+      Isaac Abdella
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="./Isaac-Abdella-Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display:none" id="pdf-header-link">Resume PDF</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-top">
+    <span class="brand">Menu</span>
+    <button class="theme-toggle" id="mobile-nav-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <a href="#experience">Experience</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#learning">Learning</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+<a id="top"></a>
+<!-- ================= HERO ================= -->
+<section class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="hero-kicker"><span class="dot"></span> Available for full-stack + applied ML roles</span>
+      <h1>Business Systems Analyst who <em>ships</em> full-stack &amp; ML systems.</h1>
+      <p class="hero-lede">I'm Isaac Abdella — a business systems analyst by trade, and a full-stack + applied-ML builder by habit. This portfolio isn't slideware: every project below is real, and the flagship one is a production app you can log into right now.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          View case studies
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://persfin-app.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Open the live app</a>
+        <a href="mailto:yisehakga@proton.me" class="btn btn-ghost">Email me</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="num tabular">4</span><span class="lbl">Real, documented projects</span></div>
+        <div class="hero-meta-item"><span class="num tabular">66</span><span class="lbl">Commits on flagship app</span></div>
+        <div class="hero-meta-item"><span class="num tabular">2</span><span class="lbl">Live production services</span></div>
+        <div class="hero-meta-item"><span class="num tabular">4+ yrs</span><span class="lbl">Business analysis experience</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="./assets/screenshots/01_dashboard.png" alt="Live dashboard of My_PersFin_App showing net worth, accounts, and 12-month cash flow for a real demo persona" loading="eager" />
+      <div class="hero-visual-badge">
+        <span><span class="status-dot"></span>persfin-app.onrender.com</span>
+        <span>Live now</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT STRIP ================= -->
+<section class="section section--tight wrap">
+  <div class="section-head reveal">
+    <span class="eyebrow">About</span>
+    <h2 class="section-title">Four years in business systems analysis. A parallel track in shipping code.</h2>
+    <p class="section-sub">I work as an ISL 24 Business Systems Analyst in the BC Government, writing BRDs and running gap analysis across a portfolio of 600+ applications — the fifth role in a 14-year track record spanning security access administration, client support, and bilingual technical support. Outside of that, I build full-stack products end to end — most recently a production Canadian Personal-Finance platform with its own machine-learning microservice, currently deployed and live. I hold an MIT IDSS certificate in Data Science &amp; Machine Learning: Making Data-Driven Decisions and ITIL4 certification, and I'm finishing a UBC Extended Learning Full Stack Development &amp; DevOps bootcamp. This site walks through what I've actually built, using STAR structure, so you can see the reasoning, not just the output.</p>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section wrap" id="experience">
+  <div class="section-head reveal">
+    <span class="eyebrow">Experience</span>
+    <h2 class="section-title">Five roles, one throughline: understand the system, fix it, document it.</h2>
+    <p class="section-sub">Government business-systems analysis and client-support roles since 2011 — the day-job track that runs in parallel with the full-stack + ML work below. Full detail in each role; expand for the complete responsibility list.</p>
+  </div>
+  <div class="timeline timeline--jobs reveal">
+    <div class="timeline-item">
+      <span class="timeline-tag">Sept 2022 &ndash; Present &middot; Victoria, BC</span>
+      <h4>ISL 24 &mdash; Business Systems Analyst</h4>
+      <p class="timeline-org">NRIDS Maintenance &amp; Support Team, Ministry of Natural Resources</p>
+      <p>Maintains client relationships across a 600+ application government portfolio, writes BRDs and technical service standards, leads systems-maintenance projects, and manages Tier 2/3 escalations with OCIO, vendors, and staff.</p>
+      <details class="role-details">
+        <summary>Full responsibilities</summary>
+        <ul class="role-bullets">
+          <li>Maintained client relationships through deep understanding of business/technology needs; advised on cost-effective technology solutions and ensured approved solutions met business requirements.</li>
+          <li>Developed technical service standards, configuration standards, and detailed implementation-plan designs to keep solutions technically accurate and government-compliant.</li>
+          <li>Managed and led systems-maintenance projects &mdash; work plans, technical specs, timelines, resource requirements, and direction of project teams.</li>
+          <li>Provided cost-benefit analysis and technical recommendations for budget, procurement, and major operations initiatives; supported RFP preparation and monitored deliverables as a qualified receiver.</li>
+          <li>Oversaw SDLC governance for line-of-business lifecycle management and researched/developed business cases (technology alternatives, risk assessment, cost-benefit, policy implications).</li>
+          <li>Planned, monitored, and tested disaster-recovery, security, and business-continuity procedures; served as a key point of contact during operational emergencies.</li>
+          <li>Authored technical training manuals, operations manuals, business cases, and onboarding documentation; participated in cross-government committees on infrastructure strategy.</li>
+          <li>Managed escalations and Tier 2/3 incident/problem resolution across OCIO, clients, staff, and vendors.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">Feb 2021 &ndash; Sept 2022 &middot; Victoria, BC</span>
+      <h4>ISL 21 &mdash; Client Support Analyst</h4>
+      <p class="timeline-org">Integrated Service Solutions, Service BC &middot; Ministry of Citizens' Services</p>
+      <p>Diagnosed mainframe (IMS/VIRTEL) and BC OnLine access issues for a user base spanning banks, realtors, lawyers, and government users, while administering Group Data Security Administrator (GDSA) access and financial-anomaly reviews.</p>
+      <details class="role-details">
+        <summary>Full responsibilities</summary>
+        <ul class="role-bullets">
+          <li>Checked consistency of user security profiles and security data across database applications and mainframe systems (IMS via VIRTEL).</li>
+          <li>Advised customers on application usage and the most effective techniques for desired results; provided expert PC hardware/software support and browser configuration for BC OnLine access.</li>
+          <li>Supported PC-to-host/server integration across multiple network-access methods, diagnosing specific access problems for banks, realtors, lawyers, accountants, police, and government users.</li>
+          <li>Diagnosed IMS problems using diagnostic tools, system queries, commands, and logs in the mainframe host environment; investigated BC OnLine web/printer server issues.</li>
+          <li>Performed systems and user-acceptance QA with business partners &mdash; created/maintained test plans, test cases, and test data; reviewed/tested HTML code for BC OnLine web screens.</li>
+          <li>Provided Group Data Security Administrator (GDSA) support; reviewed daily Ministry of Finance reports for filing/payment anomalies and processed reversals/credits.</li>
+          <li>Administered security across multiple systems &mdash; defined access-control requirements, audited access structures/IDs/group lists, and resolved escalated security issues.</li>
+          <li>Delivered training and security-awareness presentations tailored to client groups; stayed current on emerging security threats.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">Jan 2019 &ndash; Feb 2021 &middot; Victoria, BC</span>
+      <h4>ISL 18 &mdash; Service and Request Analyst (Security Administration)</h4>
+      <p class="timeline-org">Information Services Division &middot; Ministry of Social Development and Poverty Reduction / MCFD</p>
+      <p>Onboarded Service Providers and managed security access lifecycle across Remedy, ICM, and mainframe IMS, plus monthly IDIR access monitoring for two ministries.</p>
+      <details class="role-details">
+        <summary>Full responsibilities</summary>
+        <ul class="role-bullets">
+          <li>Onboarded and set security profiles for Service Providers in the Remedy application; enabled, disabled, and modified Service Provider user access.</li>
+          <li>Checked consistency of user security profiles and data across database applications and mainframes (ICM and VIRTEL's mainframe IMS).</li>
+          <li>Performed data-entry and security-access/status request tasks, including ordering services in CAS, iStore, and My Service Centre (MySC).</li>
+          <li>Monitored IDIR access for SDPR/MCFD staff via monthly/weekly Staffing Activity, Employee Movement, and OCIO IDIR Status Reports; managed access deletes, holds, and modifications from those reports.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">Mar 2018 &ndash; Jan 2019 &middot; Victoria, BC</span>
+      <h4>Field Service Technician</h4>
+      <p class="timeline-org">People-To-Go / Dispatch Us Inc.</p>
+      <p>Independent-contractor IT support onsite at Crown corporations, professional firms, and national retail/restaurant chains &mdash; hardware/software/network troubleshooting and incident-queue resolution.</p>
+      <details class="role-details">
+        <summary>Full responsibilities</summary>
+        <ul class="role-bullets">
+          <li>Delivered onsite IT support as an independent contractor for clients spanning Crown corporations, professional firms, and national/international retail and restaurant chains.</li>
+          <li>Performed onsite hardware/software/network troubleshooting; installed, configured, and maintained shared systems software/hardware and line-of-business applications.</li>
+          <li>Monitored and responded to incident queues, diagnosed hardware faults, identified required parts, resolved issues, and closed service tickets with documented resolution details.</li>
+          <li>Educated client managers, supervisors, and staff on proper device use and best practices; supported data-network configuration/troubleshooting across varied computing environments.</li>
+        </ul>
+      </details>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">Sept 2011 &ndash; Aug 2015 &middot; Victoria, BC</span>
+      <h4>Bilingual Technical Support Representative</h4>
+      <p class="timeline-org">Digital River, Inc. (now Worldline Global Inc.)</p>
+      <p>Bilingual Tier 1/2 e-commerce technical support &mdash; API integrations, payment-device troubleshooting, and Agile bug-fix/testing cycles for merchant clients and their web developers.</p>
+      <details class="role-details">
+        <summary>Full responsibilities</summary>
+        <ul class="role-bullets">
+          <li>Provided bilingual Tier 1/2 technical support in a call-center e-commerce environment to merchant clients and their web developers &mdash; resolving issues across API integrations, services, and payment-device hardware/software.</li>
+          <li>Investigated and implemented complex IT integration solutions through troubleshooting and testing; resolved client system-access security and API authentication issues.</li>
+          <li>Coordinated with business partners, third-party service providers, and technical staff on high-level client support; participated in bug identification, code changes, and post-implementation testing in an Agile environment.</li>
+          <li>Contributed to pre- and post-implementation phases of e-commerce payment-processing product design/development, and to technical staff training and client reference documentation.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS MATRIX ================= -->
+<section class="section wrap" id="skills">
+  <div class="section-head reveal">
+    <span class="eyebrow">Range of ability</span>
+    <h2 class="section-title">The skills matrix</h2>
+    <p class="section-sub">A four-tier, self-assessed breakdown — Basic through Advanced — across everything I actively use. The point isn't to look uniformly expert; it's to show where I'm deep, where I'm capable, and where I'm deliberately growing.</p>
+  </div>
+  <div class="matrix-layout">
+    <div class="chart-card reveal">
+      <h3>Competency radar</h3>
+      <p class="chart-note">Self-rated 1 (basic) – 4 (advanced) across six practice areas</p>
+      <div class="chart-wrap"><canvas id="radarChart" role="img" aria-label="Radar chart of six competency areas rated from basic to advanced"></canvas></div>
+    </div>
+    <div class="tier-stack">
+      <div class="tier-card reveal" style="--tier-color:var(--color-primary)">
+        <div class="tier-head"><span class="tier-name">Advanced</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Business analysis (BRD / gap analysis)</span>
+          <span class="chip">Oracle SQL / PL-SQL</span>
+          <span class="chip">Security access administration / IAM</span>
+          <span class="chip">Hardware &amp; network troubleshooting</span>
+          <span class="chip">Bilingual comms (English / French)</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-teal)">
+        <div class="tier-head"><span class="tier-name">Advanced&ndash;Moderate</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">MERN stack (Node, Express, React, MongoDB)</span>
+          <span class="chip">JavaScript / TypeScript</span>
+          <span class="chip">REST API design &amp; auth</span>
+          <span class="chip">Cloud deployment (Render, env/secrets mgmt)</span>
+          <span class="chip">Nx monorepo tooling</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-amber)">
+        <div class="tier-head"><span class="tier-name">Moderate</span><span class="tier-count">4 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Applied data science / ML (scikit-learn, FastAPI)</span>
+          <span class="chip">Cloud object storage architecture (S3, R2)</span>
+          <span class="chip">IoT / embedded integration (Pi, HDMI-CEC)</span>
+          <span class="chip">Vendor / contract / RFP management</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-text-faint)">
+        <div class="tier-head"><span class="tier-name">Basic — actively building</span><span class="tier-count">3 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Cloud platform breadth (AWS / Azure / GCP)</span>
+          <span class="chip">Formal Agile / Scrum methodology</span>
+          <span class="chip">C++ / Java</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK / CASE STUDIES ================= -->
+<section class="wrap" id="work" style="padding-top: clamp(var(--space-16), 9vw, var(--space-28)); border-top: 1px solid var(--color-divider);">
+  <div class="section-head reveal">
+    <span class="eyebrow">Case studies</span>
+    <h2 class="section-title">What I've actually built</h2>
+    <p class="section-sub">Four projects, each broken down with Situation → Task → Action → Result. The first is live and screenshotted directly from production; the next two are documented architecture from active builds; the fourth is applied data science and ML from graduate-level coursework.</p>
+  </div>
+</section>
+
+<!-- ---- CASE STUDY 1: My_PersFin_App ---- -->
+<article class="project wrap" id="project-persfin" style="border-top:none;">
+  <div class="project-head reveal">
+    <div>
+      <div class="project-tag-row">
+        <span class="tag tag--tier-advmod">Flagship project</span>
+        <span class="tag tag--tech">React 19 · TypeScript</span>
+        <span class="tag tag--tech">Express 5 · MongoDB</span>
+        <span class="tag tag--tech">FastAPI · scikit-learn</span>
+      </div>
+      <h3 class="project-title">My_PersFin_App</h3>
+      <p class="project-tagline">A production Canadian personal-finance platform with its own ML microservice — built as the capstone for a UBC full-stack bootcamp, and still live today.</p>
+    </div>
+    <div class="project-links">
+      <a href="https://persfin-app.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Open live app
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+      </a>
+      <a href="https://github.com/Isaac-Abdella/My_PersFin_App" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View repo</a>
+    </div>
+  </div>
+
+  <div class="media-block reveal">
+    <video controls preload="metadata" poster="./assets/video/poster.jpg" aria-label="Screen recording walking through the live My_PersFin_App: dashboard, debt optimization, RRSP vs TFSA, and ML insights">
+      <source src="./assets/video/persfin_app_demo.mp4" type="video/mp4" />
+    </video>
+    <div class="media-caption">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      82-second live walkthrough recorded directly against persfin-app.onrender.com — dashboard → debt optimization → RRSP vs TFSA → ML forecast.
+    </div>
+  </div>
+
+  <div class="shot-grid reveal">
+    <figure><img src="./assets/screenshots/01_dashboard.png" alt="Dashboard with accounts, net worth, and 12-month cash flow chart" loading="lazy" /><figcaption>Net worth &amp; cash flow dashboard</figcaption></figure>
+    <figure><img src="./assets/screenshots/02_ml_insights.png" alt="ML Insights page listing spending forecast, anomaly detection, and smart budget tools" loading="lazy" /><figcaption>ML Insights (scikit-learn / statsmodels)</figcaption></figure>
+    <figure><img src="./assets/screenshots/03_ml_forecast_result.png" alt="Rendered Holt-Winters spending forecast chart with percentile band" loading="lazy" /><figcaption>Holt-Winters spending forecast</figcaption></figure>
+    <figure><img src="./assets/screenshots/04_debt_optimization.png" alt="Debt optimization tool with donut chart of debt breakdown" loading="lazy" /><figcaption>Avalanche vs. Snowball optimizer</figcaption></figure>
+  </div>
+
+  <div class="star-grid reveal">
+    <div class="star-card">
+      <span class="star-letter">S</span>
+      <h4>Situation</h4>
+      <p>Mainstream budgeting tools are built for US financial products and ignore Canadian tax-advantaged accounts (TFSA/RRSP/FHSA/RESP) — and this project doubled as the required capstone for a UBC full-stack bootcamp.</p>
+    </div>
+    <div class="star-card">
+      <span class="star-letter">T</span>
+      <h4>Task</h4>
+      <p>Design, build, secure, and deploy a production-grade, multi-service platform end to end — accounts, imports, budgeting, debt payoff, Canadian registered accounts, and an ML insights layer.</p>
+    </div>
+    <div class="star-card">
+      <span class="star-letter">A</span>
+      <h4>Action</h4>
+      <p>Built a React/TypeScript frontend and Express/MongoDB API with session auth, a separate FastAPI ML microservice, CSV/PDF import, a debt-payoff engine, and a security hardening pass before launch.</p>
+    </div>
+    <div class="star-card">
+      <span class="star-letter">R</span>
+      <h4>Result</h4>
+      <p>A live, two-service production deployment covering 10 realistic financial personas — satisfying the capstone requirement while functioning as a genuine consumer-grade product today.</p>
+    </div>
+  </div>
+
+  <div class="result-strip reveal">
+    <div class="result-stat"><span class="num tabular">66</span><span class="lbl">Git commits / 9 phases</span></div>
+    <div class="result-stat"><span class="num tabular">2</span><span class="lbl">Coordinated Render services</span></div>
+    <div class="result-stat"><span class="num tabular">10</span><span class="lbl">Seeded demo personas</span></div>
+    <div class="result-stat"><span class="num tabular">3</span><span class="lbl">ML models in production</span></div>
+  </div>
+
+  <div class="talk-points reveal">
+    <h4>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>
+      Interview talking points
+    </h4>
+    <ul>
+      <li>Why the ML layer is a separate FastAPI service instead of embedded in the Node API — independent deploy cadence and clean separation of concerns.</li>
+      <li>Walking through a real production incident: a Recharts v3 / Express 5 version mismatch broke the build, and how it was diagnosed and fixed.</li>
+      <li>Security hardening (rate limiting, at-rest token encryption for Plaid access) was an explicit final phase — and what I'd build in from day one next time.</li>
+      <li>Domain-specific product judgment: modeling Canadian tax-advantaged accounts instead of cloning a generic US budgeting tutorial.</li>
+    </ul>
+  </div>
+</article>
+
+<!-- ---- CASE STUDY 2: Cultura ---- -->
+<article class="project wrap" id="project-cultura">
+  <div class="project-head reveal">
+    <div>
+      <div class="project-tag-row">
+        <span class="tag tag--tier-advanced">Architecture &amp; DevOps</span>
+        <span class="tag tag--tech">Nx · pnpm</span>
+        <span class="tag tag--tech">React 19 · React Native</span>
+        <span class="tag tag--tech">Fastify 5 · Vite 7</span>
+      </div>
+      <h3 class="project-title">Cultura recommendation monorepo</h3>
+      <p class="project-tagline">Fixing the build-governance problem in a five-platform Nx monorepo before writing another line of feature code.</p>
+    </div>
+  </div>
+
+  <div class="diagram reveal">
+    <div class="diagram-label">Monorepo structure &amp; build target mapping (real, as configured)</div>
+    <div class="tree-diagram">
+      <div class="tree-col">
+        <h5>apps/</h5>
+        <div class="tree-item">Cultura (core app)<span class="pct">20%</span><div class="progress-bar"><span style="width:20%"></span></div><span class="plugin">@nx/vite</span></div>
+        <div class="tree-item">Web<span class="pct">10%</span><div class="progress-bar"><span style="width:10%"></span></div><span class="plugin">@nx/vite</span></div>
+        <div class="tree-item">Smart TV<span class="pct">60%</span><div class="progress-bar"><span style="width:60%"></span></div><span class="plugin">@nx/vite</span></div>
+        <div class="tree-item">Mobile<span class="pct">40%</span><div class="progress-bar"><span style="width:40%"></span></div><span class="plugin">@nx/react-native</span></div>
+        <div class="tree-item">IoT Player<span class="pct">5%</span><div class="progress-bar"><span style="width:5%"></span></div><span class="plugin">@nx/vite</span></div>
+      </div>
+      <div class="tree-col">
+        <h5>services/</h5>
+        <div class="tree-item">Media API<span class="pct">~50%</span><div class="progress-bar"><span style="width:50%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
+        <div class="tree-item">Playback API<span class="pct">~50%</span><div class="progress-bar"><span style="width:50%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
+        <div class="tree-item">Auth (stubbed)<span class="pct">~10%</span><div class="progress-bar"><span style="width:10%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
+      </div>
+      <div class="tree-col">
+        <h5>packages/</h5>
+        <div class="tree-item">Shared libraries<span class="pct">~30%</span><div class="progress-bar"><span style="width:30%"></span></div><span class="plugin">@nx/js:tsc</span></div>
+        <div class="tree-item">nx.json<span class="pct">baseline</span><div class="progress-bar"><span style="width:100%"></span></div><span class="plugin">shared target defaults</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="star-grid reveal">
+    <div class="star-card"><span class="star-letter">S</span><h4>Situation</h4><p>A four-platform recommendation system (Web, Mobile, Smart TV, IoT) on an Nx + pnpm monorepo had every project's build targets left empty — <code class="font-mono" style="font-size:var(--text-xs)">targets: {}</code> — so `nx build/serve/test/lint` couldn't run reliably anywhere.</p></div>
+    <div class="star-card"><span class="star-letter">T</span><h4>Task</h4><p>Fix the build-governance problem first: define a canonical, repeatable target set per project type before any further feature work.</p></div>
+    <div class="star-card"><span class="star-letter">A</span><h4>Action</h4><p>Mapped <span class="font-mono">@nx/esbuild</span>/<span class="font-mono">@nx/node</span> to Fastify services, <span class="font-mono">@nx/vite</span> to React apps, <span class="font-mono">@nx/react-native</span> to mobile, and <span class="font-mono">@nx/js:tsc</span> to shared libraries, centralizing defaults in <span class="font-mono">nx.json</span>.</p></div>
+    <div class="star-card"><span class="star-letter">R</span><h4>Result</h4><p>A validated build-standardization plan — confirmed via <span class="font-mono">nx graph</span> and <span class="font-mono">nx run-many</span> — that unblocks consistent build/serve/test/lint across a five-platform codebase.</p></div>
+  </div>
+
+  <div class="talk-points reveal">
+    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
+    <ul>
+      <li>Recognizing that the feature wasn't blocked by missing code — it was blocked by missing build infrastructure — and fixing the foundation first.</li>
+      <li>Real Nx/monorepo experience, a tool increasingly common at mid-size and growing engineering orgs, beyond a single-app Vite/CRA setup.</li>
+      <li>Comfortable giving an honest, granular completion estimate per subsystem instead of one vague "in progress."</li>
+    </ul>
+  </div>
+</article>
+
+<!-- ---- CASE STUDY 3: Raspberry Pi Smart TV Kiosk ---- -->
+<article class="project wrap" id="project-kiosk">
+  <div class="project-head reveal">
+    <div>
+      <div class="project-tag-row">
+        <span class="tag tag--tier-moderate">IoT &amp; hardware</span>
+        <span class="tag tag--tech">Raspberry Pi 5 · LibreELEC/Kodi</span>
+        <span class="tag tag--tech">FastAPI · scikit-learn</span>
+        <span class="tag tag--tech">Docker Compose</span>
+      </div>
+      <h3 class="project-title">Smart TV kiosk dashboard</h3>
+      <p class="project-tagline">A self-hosted, remote-and-touch-navigable recommendation dashboard for a TV, running entirely on a Raspberry Pi.</p>
+    </div>
+  </div>
+
+  <div class="diagram reveal">
+    <div class="diagram-label">Reference architecture (hardware → services → playback)</div>
+    <div class="flow-row">
+      <div class="flow-node"><span class="n-title">TV remote</span><span class="n-sub">HDMI-CEC input</span></div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="flow-node accent"><span class="n-title">React kiosk UI</span><span class="n-sub">Chromium fullscreen, 5-col grid</span></div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="flow-node"><span class="n-title">Node/Express API</span><span class="n-sub">/recommend, /play-rec</span></div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="flow-node teal"><span class="n-title">FastAPI recommender</span><span class="n-sub">scikit-learn, MongoDB</span></div>
+    </div>
+    <div style="height:var(--space-4)"></div>
+    <div class="flow-row">
+      <div class="flow-node amber"><span class="n-title">Kodi / LibreELEC</span><span class="n-sub">JSON-RPC: Player.Open</span></div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="flow-node"><span class="n-title">Raspberry Pi 5</span><span class="n-sub">Docker Compose orchestration</span></div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="flow-node"><span class="n-title">TV output</span><span class="n-sub">4K / 16:9 playback</span></div>
+    </div>
+  </div>
+
+  <div class="star-grid reveal">
+    <div class="star-card"><span class="star-letter">S</span><h4>Situation</h4><p>Proprietary Smart TV app stores are closed ecosystems — they won't combine a personal recommendation engine with unified playback control across both touch and remote input.</p></div>
+    <div class="star-card"><span class="star-letter">T</span><h4>Task</h4><p>Design and prototype a self-hosted kiosk dashboard, running on a Raspberry Pi, navigable by both touch and a standard TV remote via HDMI-CEC.</p></div>
+    <div class="star-card"><span class="star-letter">A</span><h4>Action</h4><p>Chose Pi 5 + LibreELEC/Kodi + Node/Express + React (Chromium kiosk) + FastAPI/scikit-learn, wired the UI to Kodi's JSON-RPC API, and mapped CEC remote input to a five-column focus-driven grid.</p></div>
+    <div class="star-card"><span class="star-letter">R</span><h4>Result</h4><p>A documented, end-to-end reference architecture validated against real hardware limits (Pi 4 is too weak for 4K transcoding; LibreELEC needs a Chromium/WebView layer for a true kiosk UI) — not assumed to "just work."</p></div>
+  </div>
+
+  <div class="talk-points reveal">
+    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
+    <ul>
+      <li>Hardware-aware software design — reasoning through CEC remote mapping and 4K transcoding limits before writing UI code.</li>
+      <li>Range beyond typical web-only portfolios: IoT protocols (Kodi JSON-RPC, HDMI-CEC), not just REST APIs.</li>
+      <li>The same "Node + Python recommender" split shows up here and in Cultura — a consistent, reusable architectural instinct.</li>
+    </ul>
+  </div>
+</article>
+
+<!-- ---- CASE STUDY 4: MIT IDSS Data Science & ML coursework ---- -->
+<article class="project wrap" id="project-mit-dsml">
+  <div class="project-head reveal">
+    <div>
+      <div class="project-tag-row">
+        <span class="tag tag--tier-moderate">Applied data science &amp; ML</span>
+        <span class="tag tag--tech">Python · pandas · scikit-learn</span>
+        <span class="tag tag--tech">surprise (SVD/CF)</span>
+        <span class="tag tag--tech">GridSearchCV</span>
+      </div>
+      <h3 class="project-title">MIT IDSS coursework, applied: three ML projects</h3>
+      <p class="project-tagline">Graduate-level data science and machine learning, from the MIT IDSS &ldquo;Data Science and Machine Learning: Making Data-Driven Decisions&rdquo; program (completed via the MIT Schwarzman College of Computing pathway, May 2024) — a 12-week curriculum, three of its projects below.</p>
+    </div>
+  </div>
+
+  <div class="diagram reveal">
+    <div class="diagram-label">12-week curriculum</div>
+    <div class="curriculum-strip">
+      <span>Wks 1&ndash;2 &middot; Foundations of Data Science (Python / stats)</span>
+      <span>Wks 3&ndash;4 &middot; Unstructured Data (clustering / PCA)</span>
+      <span>Wks 5&ndash;6 &middot; Regression &amp; Prediction</span>
+      <span>Wks 7&ndash;8 &middot; Classification &amp; Hypothesis Testing</span>
+      <span>Wks 9&ndash;10 &middot; Deep Learning</span>
+      <span>Wk 11 &middot; Recommendation Systems</span>
+      <span>Wk 12 &middot; Networking / Graphical Models + GenAI modules</span>
+    </div>
+  </div>
+
+  <div class="dsml-grid reveal">
+    <div class="dsml-card">
+      <span class="dsml-role">Project &middot; Foundations of Data Science</span>
+      <h4>FoodHub delivery data — exploratory analysis</h4>
+      <p><strong>Situation:</strong> FoodHub, an NYC food-delivery aggregator, needed to understand demand patterns across 1,898 orders and 9 attributes (cuisine, cost, day of week, ratings, prep/delivery time).</p>
+      <p><strong>Task:</strong> Answer specific business questions — which cuisines and days drive volume, how prep and delivery time distribute, and what ratings reveal about service quality.</p>
+      <p><strong>Action:</strong> Full EDA in pandas/matplotlib/seaborn — univariate and bivariate analysis, cuisine-by-day demand breakdowns, and delivery/prep-time distribution analysis.</p>
+      <div class="dsml-result"><strong>Result:</strong> Clear, data-backed answers on demand concentration, service-time bottlenecks, and rating drivers — the same analysis pattern used for any operational dataset.</div>
+    </div>
+    <div class="dsml-card">
+      <span class="dsml-role">Project &middot; Classification &amp; Hypothesis Testing</span>
+      <h4>ExtraaLearn — lead-conversion classification</h4>
+      <p><strong>Situation:</strong> ExtraaLearn, an EdTech company, had 4,612 leads and needed to predict which would convert to paying customers, based on engagement signals like time on site and referral source.</p>
+      <p><strong>Task:</strong> Build and compare classification models to identify high-probability leads and surface the strongest predictive features for the sales team.</p>
+      <p><strong>Action:</strong> Trained and tuned Logistic Regression, Random Forest, and SVM (RBF kernel) via GridSearchCV; ranked feature importance using logistic-regression coefficients/odds.</p>
+      <div class="dsml-result"><strong>Result:</strong> SVM (RBF) delivered the best recall among all models; <strong>time spent on website</strong> and first-interaction channel emerged as the top conversion drivers — directly actionable for a sales/marketing team.</div>
+    </div>
+    <div class="dsml-card">
+      <span class="dsml-role">Project &middot; Recommendation Systems</span>
+      <h4>Amazon Electronics — recommendation engine</h4>
+      <p><strong>Situation:</strong> A large-scale Amazon Electronics ratings dataset needed a recommendation approach that could suggest relevant products at scale.</p>
+      <p><strong>Task:</strong> Build and evaluate multiple recommendation strategies — rank-based, collaborative filtering, and matrix factorization — and tune the strongest for accuracy.</p>
+      <p><strong>Action:</strong> Implemented rank-based, user-user CF, item-item CF, and SVD (matrix factorization) models with the <code>surprise</code> library, tuning via GridSearchCV.</p>
+      <div class="dsml-result"><strong>Result:</strong> Tuned user-user KNN cut RMSE from a 1.84 baseline to <strong>1.11</strong>, with 0.858 precision and 0.644 F1 — the direct precursor to the recommendation logic used in the Cultura monorepo above.</div>
+    </div>
+  </div>
+
+  <div class="talk-points reveal">
+    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
+    <ul>
+      <li>Comfortable across the full ML toolkit — EDA, classification, hypothesis testing, and collaborative-filtering recommenders — not just one narrow specialty.</li>
+      <li>Grounded in real evaluation discipline: baseline-vs-tuned metrics (RMSE, precision, recall, F1), not just "I trained a model."</li>
+      <li>Direct line from coursework to production: the recommendation-systems project fed straight into the Cultura monorepo's real recommendation logic.</li>
+    </ul>
+  </div>
+</article>
+
+<!-- ================= CONTINUOUS LEARNING ================= -->
+<section class="section wrap" id="learning">
+  <div class="section-head reveal">
+    <span class="eyebrow">Continuous learning</span>
+    <h2 class="section-title">Always mid-certification, on purpose</h2>
+    <p class="section-sub">Certifications completed, in progress, and deliberately queued up next — a roadmap, not a trophy case.</p>
+  </div>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <span class="timeline-tag">Completed · May 2024</span>
+      <h4>MIT IDSS Professional Certificate — Data Science and Machine Learning: Making Data-Driven Decisions</h4>
+      <p>12-week program via the MIT Schwarzman College of Computing pathway, covering Python/stats foundations, unstructured data, regression, classification, deep learning, recommendation systems, and graphical models. Three applied projects from the program are broken down in the case study above — the foundation that led directly into the ML microservice built for My_PersFin_App.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">Completed</span>
+      <h4>ITIL4 Certification</h4>
+      <p>Formal IT service management foundation, applied daily in BA work across a 600+ application government portfolio.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-tag">In progress</span>
+      <h4>UBC Extended Learning — Full Stack Software Development &amp; DevOps</h4>
+      <p>Capstone project is My_PersFin_App, above — currently finishing out the program's final requirements.</p>
+    </div>
+    <div class="timeline-item future">
+      <span class="timeline-tag">Next · 0&ndash;6 months</span>
+      <h4>Foundational cloud certification (AWS Cloud Practitioner or Azure AZ-900)</h4>
+      <p>Closing the largest self-identified gap: broad, certified cloud platform fluency beyond Render-based deployment.</p>
+    </div>
+    <div class="timeline-item future">
+      <span class="timeline-tag">Next · 0&ndash;6 months</span>
+      <h4>Formal Agile / Scrum certification</h4>
+      <p>Turning years of informal SDLC exposure into a recognized credential (CSM or PSM I).</p>
+    </div>
+    <div class="timeline-item future">
+      <span class="timeline-tag">Next · 1&ndash;2 years</span>
+      <h4>Production MLOps: RAG, vector databases, CI/CD for models</h4>
+      <p>The natural next step from a working ML microservice to a properly operated one — versioned, monitored, and continuously deployed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section wrap" id="contact">
+  <div class="contact-card reveal">
+    <h2>Let's talk about what's next.</h2>
+    <p>Open to full-stack, applied ML, and technical business analyst roles. Happy to walk through the reasoning behind any project above in more depth.</p>
+    <div class="contact-actions">
+      <a href="mailto:yisehakga@proton.me" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+        yisehakga@proton.me
+      </a>
+      <a href="https://github.com/Isaac-Abdella" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub profile</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-row">
+    <span>© 2026 Isaac Abdella. Built for a career-school portfolio project — every project and metric above is real.</span>
+    <span><a href="https://github.com/Isaac-Abdella" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="mailto:yisehakga@proton.me">Email</a></span>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://perplexity.localhost","http://localhost:1420","http://127.0.0.1:1420","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>

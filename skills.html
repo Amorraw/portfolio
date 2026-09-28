@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skills — Isaac Abdella</title>
+<meta name="description" content="Isaac Abdella's four-tier, self-assessed skills matrix, Basic through Advanced." />
+<meta property="og:title" content="Skills — Isaac Abdella" />
+<meta property="og:description" content="Isaac Abdella's four-tier, self-assessed skills matrix, Basic through Advanced." />
+<meta property="og:type" content="website" />
+
+<!-- Fonts: Cabinet Grotesk (display) + Satoshi (body) via Fontshare, JetBrains Mono via Google -->
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./base.css" />
+<link rel="stylesheet" href="./style.css" />
+
+<!-- Favicon: inline SVG monogram -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%234338CA'/%3E%3Cpath d='M13 28V12h4v10.2L26 12h5l-8.5 9.6L31.5 28H26l-6.2-8.4L15 24.5V28h-2z' fill='white'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<a href="#main" class="sr-only">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="./index.html" class="brand" aria-label="Isaac Abdella home">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect width="40" height="40" rx="9" fill="currentColor"/>
+        <path d="M13 28V12h4v10.2L26 12h5l-8.5 9.6L31.5 28H26l-6.2-8.4L15 24.5V28h-2z" fill="var(--color-bg)"/>
+      </svg>
+      Isaac Abdella
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./projects.html">Projects</a>
+      <a href="./skills.html" aria-current="page">Skills</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="./Isaac-Abdella-Portfolio.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display:none" id="pdf-header-link">Resume PDF</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-top">
+    <span class="brand">Menu</span>
+    <button class="theme-toggle" id="mobile-nav-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+      <a href="./index.html">Home</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./skills.html" aria-current="page">Skills</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- ================= SKILLS MATRIX ================= -->
+<section class="section section--page wrap" id="skills">
+  <div class="section-head reveal">
+    <span class="eyebrow">Range of ability</span>
+    <h1 class="section-title">The skills matrix</h1>
+    <p class="section-sub">A four-tier, self-assessed breakdown — Basic through Advanced — across everything I actively use. The point isn't to look uniformly expert; it's to show where I'm deep, where I'm capable, and where I'm deliberately growing.</p>
+  </div>
+  <div class="tier-grid">
+      <div class="tier-card reveal" style="--tier-color:var(--color-primary)">
+        <div class="tier-head"><span class="tier-name">Advanced</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Business analysis (BRD / gap analysis)</span>
+          <span class="chip">Oracle SQL / PL-SQL</span>
+          <span class="chip">Security access administration / IAM</span>
+          <span class="chip">Hardware &amp; network troubleshooting</span>
+          <span class="chip">Bilingual comms (English / French)</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-teal)">
+        <div class="tier-head"><span class="tier-name">Advanced&ndash;Moderate</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">MERN stack (Node, Express, React, MongoDB)</span>
+          <span class="chip">JavaScript / TypeScript</span>
+          <span class="chip">REST API design &amp; auth</span>
+          <span class="chip">Cloud deployment (Render, env/secrets mgmt)</span>
+          <span class="chip">Nx monorepo tooling</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-amber)">
+        <div class="tier-head"><span class="tier-name">Moderate</span><span class="tier-count">4 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Applied data science / ML (scikit-learn, FastAPI)</span>
+          <span class="chip">Cloud object storage architecture (S3, R2)</span>
+          <span class="chip">IoT / embedded integration (Pi, HDMI-CEC)</span>
+          <span class="chip">Vendor / contract / RFP management</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-text-faint)">
+        <div class="tier-head"><span class="tier-name">Basic — actively building</span><span class="tier-count">3 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Cloud platform breadth (AWS / Azure / GCP)</span>
+          <span class="chip">Formal Agile / Scrum methodology</span>
+          <span class="chip">C++ / Java</span>
+        </div>
+      </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-row">
+    <span>© 2026 Isaac Abdella. Built for a career-school portfolio project — every project and metric on this site is real.</span>
+    <span><a href="https://github.com/Amorraw" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="mailto:yisehakga@proton.me">Email</a></span>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

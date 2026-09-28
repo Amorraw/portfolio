@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Isaac Abdella — Business Analyst &amp; Full-Stack / ML Builder</title>
-<meta name="description" content="Portfolio of Isaac Abdella: business systems analyst and full-stack developer who ships production MERN + ML systems. Real projects, real data, STAR-structured case studies." />
+<meta name="description" content="Portfolio of Isaac Abdella: business systems analyst and full-stack developer who ships production MERN + ML systems. Real projects, real data, STAR-structured breakdowns." />
 <meta property="og:title" content="Isaac Abdella — Portfolio" />
 <meta property="og:description" content="Business analyst turned full-stack + ML builder. Four real, documented projects with live demos and honest skill range." />
 <meta property="og:type" content="website" />
@@ -21,8 +21,6 @@
 
 <!-- Favicon: inline SVG monogram -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%234338CA'/%3E%3Cpath d='M13 28V12h4v10.2L26 12h5l-8.5 9.6L31.5 28H26l-6.2-8.4L15 24.5V28h-2z' fill='white'/%3E%3C/svg%3E" />
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
 
@@ -38,10 +36,10 @@
       Isaac Abdella
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#experience">Experience</a>
-      <a href="#work">Work</a>
       <a href="#skills">Skills</a>
-      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-actions">
@@ -63,9 +61,10 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
   </div>
-  <a href="#experience">Experience</a>
-  <a href="#work">Work</a>
   <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
   <a href="#learning">Learning</a>
   <a href="#contact">Contact</a>
 </div>
@@ -78,11 +77,12 @@
   <div class="hero-grid">
     <div>
       <span class="hero-kicker"><span class="dot"></span> Available for full-stack + applied ML roles</span>
-      <h1>Business Systems Analyst who <em>ships</em> full-stack &amp; ML systems.</h1>
-      <p class="hero-lede">I'm Isaac Abdella — a business systems analyst by trade, and a full-stack + applied-ML builder by habit. This portfolio isn't slideware: every project below is real, and the flagship one is a production app you can log into right now.</p>
+      <h1 class="hero-name">Isaac Abdella</h1>
+      <p class="hero-role">Business Systems Analyst who <em>ships</em> full-stack &amp; ML systems.</p>
+      <p class="hero-lede">A business systems analyst by trade, and a full-stack + applied-ML builder by habit. This portfolio isn't slideware: every project below is real, and the flagship one is a production app you can log into right now.</p>
       <div class="hero-actions">
-        <a href="#work" class="btn btn-primary">
-          View case studies
+        <a href="#projects" class="btn btn-primary">
+          View projects
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="https://persfin-app.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Open the live app</a>
@@ -105,12 +105,145 @@
   </div>
 </section>
 
-<!-- ================= ABOUT STRIP ================= -->
-<section class="section section--tight wrap">
+<!-- ================= SKILLS MATRIX ================= -->
+<section class="section section--tight wrap" id="skills">
+  <div class="section-head reveal">
+    <span class="eyebrow">Range of ability</span>
+    <h2 class="section-title">The skills matrix</h2>
+    <p class="section-sub">A four-tier, self-assessed breakdown — Basic through Advanced — across everything I actively use. The point isn't to look uniformly expert; it's to show where I'm deep, where I'm capable, and where I'm deliberately growing.</p>
+  </div>
+  <div class="tier-grid">
+      <div class="tier-card reveal" style="--tier-color:var(--color-primary)">
+        <div class="tier-head"><span class="tier-name">Advanced</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Business analysis (BRD / gap analysis)</span>
+          <span class="chip">Oracle SQL / PL-SQL</span>
+          <span class="chip">Security access administration / IAM</span>
+          <span class="chip">Hardware &amp; network troubleshooting</span>
+          <span class="chip">Bilingual comms (English / French)</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-teal)">
+        <div class="tier-head"><span class="tier-name">Advanced&ndash;Moderate</span><span class="tier-count">5 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">MERN stack (Node, Express, React, MongoDB)</span>
+          <span class="chip">JavaScript / TypeScript</span>
+          <span class="chip">REST API design &amp; auth</span>
+          <span class="chip">Cloud deployment (Render, env/secrets mgmt)</span>
+          <span class="chip">Nx monorepo tooling</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-amber)">
+        <div class="tier-head"><span class="tier-name">Moderate</span><span class="tier-count">4 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Applied data science / ML (scikit-learn, FastAPI)</span>
+          <span class="chip">Cloud object storage architecture (S3, R2)</span>
+          <span class="chip">IoT / embedded integration (Pi, HDMI-CEC)</span>
+          <span class="chip">Vendor / contract / RFP management</span>
+        </div>
+      </div>
+      <div class="tier-card reveal" style="--tier-color:var(--color-text-faint)">
+        <div class="tier-head"><span class="tier-name">Basic — actively building</span><span class="tier-count">3 skills</span></div>
+        <div class="chip-row">
+          <span class="chip">Cloud platform breadth (AWS / Azure / GCP)</span>
+          <span class="chip">Formal Agile / Scrum methodology</span>
+          <span class="chip">C++ / Java</span>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<!-- Each card: category tag → title → tech stack → GitHub / Live links → overview → key result → "Learn more".
+     Full STAR breakdowns live in /projects/*.html. -->
+<section class="section wrap" id="projects">
+  <div class="section-head reveal">
+    <span class="eyebrow">Projects</span>
+    <h2 class="section-title">What I've actually built</h2>
+    <p class="section-sub">Four projects, each with a full Situation → Task → Action → Result breakdown one click away. The first is live in production; the next two are documented architecture from active builds; the fourth is applied data science and ML from graduate-level coursework.</p>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- ---- PROJECT 1: My_PersFin_App (featured) ---- -->
+    <article class="project-card project-card--featured reveal">
+      <a href="./projects/persfin.html" class="project-card-media" tabindex="-1" aria-hidden="true">
+        <img src="./assets/screenshots/01_dashboard.png" alt="" loading="lazy" />
+      </a>
+      <div class="project-card-body">
+        <span class="tag tag--tier-advmod">Flagship project</span>
+        <h3 class="project-card-title"><a href="./projects/persfin.html">My_PersFin_App</a></h3>
+        <ul class="tech-stack" aria-label="Tech stack"><li>React 19</li><li>TypeScript</li><li>Express 5</li><li>MongoDB</li><li>FastAPI</li><li>scikit-learn</li></ul>
+        <div class="link-bar">
+          <a class="link-pill" href="https://github.com/Isaac-Abdella/My_PersFin_App" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg> GitHub</a>
+          <a class="link-pill link-pill--primary" href="https://persfin-app.onrender.com/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Live site</a>
+        </div>
+        <p class="project-card-overview">A production Canadian personal-finance platform with its own ML microservice — covering TFSA/RRSP/FHSA/RESP accounts, CSV/PDF import, debt payoff, and ML spending forecasts. Built as a UBC bootcamp capstone and still live today.</p>
+        <p class="project-card-result"><strong>Result:</strong> Live two-service deployment on Render · 10 seeded demo personas · 3 ML models in production.</p>
+        <a href="./projects/persfin.html" class="learn-more">Learn more<span class="sr-only"> about My_PersFin_App</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </article>
+
+    <!-- ---- PROJECT 2: Cultura ---- -->
+    <article class="project-card reveal">
+      <div class="project-card-body">
+        <span class="tag tag--tier-advanced">Architecture &amp; DevOps</span>
+        <h3 class="project-card-title"><a href="./projects/cultura.html">Cultura recommendation monorepo</a></h3>
+        <ul class="tech-stack" aria-label="Tech stack"><li>Nx</li><li>pnpm</li><li>React 19</li><li>React Native</li><li>Fastify 5</li><li>Vite 7</li></ul>
+        <div class="link-bar">
+          <!-- Swap for <a class="link-pill" href="..."> once the repo is public -->
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg> Repo not public</span>
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> No live demo</span>
+        </div>
+        <p class="project-card-overview">A four-platform recommendation system (Web, Mobile, Smart TV, IoT) whose Nx build targets were all empty. Fixed the build governance first, before writing any more feature code.</p>
+        <p class="project-card-result"><strong>Result:</strong> A validated build-standardization plan, confirmed via <span class="font-mono">nx graph</span> and <span class="font-mono">nx run-many</span>.</p>
+        <a href="./projects/cultura.html" class="learn-more">Learn more<span class="sr-only"> about the Cultura monorepo</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </article>
+
+    <!-- ---- PROJECT 3: Smart TV kiosk ---- -->
+    <article class="project-card reveal">
+      <div class="project-card-body">
+        <span class="tag tag--tier-moderate">IoT &amp; hardware</span>
+        <h3 class="project-card-title"><a href="./projects/kiosk.html">Smart TV kiosk dashboard</a></h3>
+        <ul class="tech-stack" aria-label="Tech stack"><li>Raspberry Pi 5</li><li>LibreELEC / Kodi</li><li>Node / Express</li><li>React</li><li>FastAPI</li><li>scikit-learn</li><li>Docker Compose</li></ul>
+        <div class="link-bar">
+          <!-- Swap for <a class="link-pill" href="..."> once the repo is public -->
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg> Repo not public</span>
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> No live demo</span>
+        </div>
+        <p class="project-card-overview">A self-hosted recommendation dashboard for a TV, running entirely on a Raspberry Pi, navigable by both touch and a standard TV remote over HDMI-CEC.</p>
+        <p class="project-card-result"><strong>Result:</strong> An end-to-end reference architecture validated against real hardware limits.</p>
+        <a href="./projects/kiosk.html" class="learn-more">Learn more<span class="sr-only"> about the Smart TV kiosk</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </article>
+
+    <!-- ---- PROJECT 4: MIT IDSS ---- -->
+    <article class="project-card reveal">
+      <div class="project-card-body">
+        <span class="tag tag--tier-moderate">Applied data science &amp; ML</span>
+        <h3 class="project-card-title"><a href="./projects/mit-dsml.html">MIT IDSS: three applied ML projects</a></h3>
+        <ul class="tech-stack" aria-label="Tech stack"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>surprise (SVD / CF)</li><li>GridSearchCV</li></ul>
+        <div class="link-bar">
+          <!-- Swap for <a class="link-pill" href="..."> once the notebooks are public -->
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg> Repo not public</span>
+          <span class="link-pill is-disabled"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> No live demo</span>
+        </div>
+        <p class="project-card-overview">Three graduate-level projects covering exploratory analysis (FoodHub), lead-conversion classification (ExtraaLearn), and an Amazon Electronics recommendation engine.</p>
+        <p class="project-card-result"><strong>Result:</strong> Tuned user-user KNN cut RMSE from a 1.84 baseline to 1.11 (0.858 precision).</p>
+        <a href="./projects/mit-dsml.html" class="learn-more">Learn more<span class="sr-only"> about the MIT IDSS projects</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section--tight wrap" id="about">
   <div class="section-head reveal">
     <span class="eyebrow">About</span>
     <h2 class="section-title">Four years in business systems analysis. A parallel track in shipping code.</h2>
-    <p class="section-sub">I work as an ISL 24 Business Systems Analyst in the BC Government, writing BRDs and running gap analysis across a portfolio of 600+ applications — the fifth role in a 14-year track record spanning security access administration, client support, and bilingual technical support. Outside of that, I build full-stack products end to end — most recently a production Canadian Personal-Finance platform with its own machine-learning microservice, currently deployed and live. I hold an MIT IDSS certificate in Data Science &amp; Machine Learning: Making Data-Driven Decisions and ITIL4 certification, and I'm finishing a UBC Extended Learning Full Stack Development &amp; DevOps bootcamp. This site walks through what I've actually built, using STAR structure, so you can see the reasoning, not just the output.</p>
+    <p class="section-sub">I work as an ISL 24 Business Systems Analyst in the BC Government, writing BRDs and running gap analysis across a portfolio of 600+ applications — the fifth role in a 14-year track record spanning security access administration, client support, and bilingual technical support. Outside of that, I build full-stack products end to end — most recently a production Canadian Personal-Finance platform with its own machine-learning microservice, currently deployed and live. I hold an MIT IDSS certificate in Data Science &amp; Machine Learning: Making Data-Driven Decisions and ITIL4 certification, and I'm finishing a UBC Extended Learning Full Stack Development &amp; DevOps bootcamp. Each project above links to a full STAR breakdown, so you can see the reasoning, not just the output.</p>
   </div>
 </section>
 
@@ -119,7 +252,7 @@
   <div class="section-head reveal">
     <span class="eyebrow">Experience</span>
     <h2 class="section-title">Five roles, one throughline: understand the system, fix it, document it.</h2>
-    <p class="section-sub">Government business-systems analysis and client-support roles since 2011 — the day-job track that runs in parallel with the full-stack + ML work below. Full detail in each role; expand for the complete responsibility list.</p>
+    <p class="section-sub">Government business-systems analysis and client-support roles since 2011 — the day-job track that runs in parallel with the full-stack + ML work above. Full detail in each role; expand for the complete responsibility list.</p>
   </div>
   <div class="timeline timeline--jobs reveal">
     <div class="timeline-item">
@@ -208,328 +341,6 @@
   </div>
 </section>
 
-<!-- ================= SKILLS MATRIX ================= -->
-<section class="section wrap" id="skills">
-  <div class="section-head reveal">
-    <span class="eyebrow">Range of ability</span>
-    <h2 class="section-title">The skills matrix</h2>
-    <p class="section-sub">A four-tier, self-assessed breakdown — Basic through Advanced — across everything I actively use. The point isn't to look uniformly expert; it's to show where I'm deep, where I'm capable, and where I'm deliberately growing.</p>
-  </div>
-  <div class="matrix-layout">
-    <div class="chart-card reveal">
-      <h3>Competency radar</h3>
-      <p class="chart-note">Self-rated 1 (basic) – 4 (advanced) across six practice areas</p>
-      <div class="chart-wrap"><canvas id="radarChart" role="img" aria-label="Radar chart of six competency areas rated from basic to advanced"></canvas></div>
-    </div>
-    <div class="tier-stack">
-      <div class="tier-card reveal" style="--tier-color:var(--color-primary)">
-        <div class="tier-head"><span class="tier-name">Advanced</span><span class="tier-count">5 skills</span></div>
-        <div class="chip-row">
-          <span class="chip">Business analysis (BRD / gap analysis)</span>
-          <span class="chip">Oracle SQL / PL-SQL</span>
-          <span class="chip">Security access administration / IAM</span>
-          <span class="chip">Hardware &amp; network troubleshooting</span>
-          <span class="chip">Bilingual comms (English / French)</span>
-        </div>
-      </div>
-      <div class="tier-card reveal" style="--tier-color:var(--color-teal)">
-        <div class="tier-head"><span class="tier-name">Advanced&ndash;Moderate</span><span class="tier-count">5 skills</span></div>
-        <div class="chip-row">
-          <span class="chip">MERN stack (Node, Express, React, MongoDB)</span>
-          <span class="chip">JavaScript / TypeScript</span>
-          <span class="chip">REST API design &amp; auth</span>
-          <span class="chip">Cloud deployment (Render, env/secrets mgmt)</span>
-          <span class="chip">Nx monorepo tooling</span>
-        </div>
-      </div>
-      <div class="tier-card reveal" style="--tier-color:var(--color-amber)">
-        <div class="tier-head"><span class="tier-name">Moderate</span><span class="tier-count">4 skills</span></div>
-        <div class="chip-row">
-          <span class="chip">Applied data science / ML (scikit-learn, FastAPI)</span>
-          <span class="chip">Cloud object storage architecture (S3, R2)</span>
-          <span class="chip">IoT / embedded integration (Pi, HDMI-CEC)</span>
-          <span class="chip">Vendor / contract / RFP management</span>
-        </div>
-      </div>
-      <div class="tier-card reveal" style="--tier-color:var(--color-text-faint)">
-        <div class="tier-head"><span class="tier-name">Basic — actively building</span><span class="tier-count">3 skills</span></div>
-        <div class="chip-row">
-          <span class="chip">Cloud platform breadth (AWS / Azure / GCP)</span>
-          <span class="chip">Formal Agile / Scrum methodology</span>
-          <span class="chip">C++ / Java</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WORK / CASE STUDIES ================= -->
-<section class="wrap" id="work" style="padding-top: clamp(var(--space-16), 9vw, var(--space-28)); border-top: 1px solid var(--color-divider);">
-  <div class="section-head reveal">
-    <span class="eyebrow">Case studies</span>
-    <h2 class="section-title">What I've actually built</h2>
-    <p class="section-sub">Four projects, each broken down with Situation → Task → Action → Result. The first is live and screenshotted directly from production; the next two are documented architecture from active builds; the fourth is applied data science and ML from graduate-level coursework.</p>
-  </div>
-</section>
-
-<!-- ---- CASE STUDY 1: My_PersFin_App ---- -->
-<article class="project wrap" id="project-persfin" style="border-top:none;">
-  <div class="project-head reveal">
-    <div>
-      <div class="project-tag-row">
-        <span class="tag tag--tier-advmod">Flagship project</span>
-        <span class="tag tag--tech">React 19 · TypeScript</span>
-        <span class="tag tag--tech">Express 5 · MongoDB</span>
-        <span class="tag tag--tech">FastAPI · scikit-learn</span>
-      </div>
-      <h3 class="project-title">My_PersFin_App</h3>
-      <p class="project-tagline">A production Canadian personal-finance platform with its own ML microservice — built as the capstone for a UBC full-stack bootcamp, and still live today.</p>
-    </div>
-    <div class="project-links">
-      <a href="https://persfin-app.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-        Open live app
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
-      </a>
-      <a href="https://github.com/Isaac-Abdella/My_PersFin_App" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View repo</a>
-    </div>
-  </div>
-
-  <div class="media-block reveal">
-    <video controls preload="metadata" poster="./assets/video/poster.jpg" aria-label="Screen recording walking through the live My_PersFin_App: dashboard, debt optimization, RRSP vs TFSA, and ML insights">
-      <source src="./assets/video/persfin_app_demo.mp4" type="video/mp4" />
-    </video>
-    <div class="media-caption">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      82-second live walkthrough recorded directly against persfin-app.onrender.com — dashboard → debt optimization → RRSP vs TFSA → ML forecast.
-    </div>
-  </div>
-
-  <div class="shot-grid reveal">
-    <figure><img src="./assets/screenshots/01_dashboard.png" alt="Dashboard with accounts, net worth, and 12-month cash flow chart" loading="lazy" /><figcaption>Net worth &amp; cash flow dashboard</figcaption></figure>
-    <figure><img src="./assets/screenshots/02_ml_insights.png" alt="ML Insights page listing spending forecast, anomaly detection, and smart budget tools" loading="lazy" /><figcaption>ML Insights (scikit-learn / statsmodels)</figcaption></figure>
-    <figure><img src="./assets/screenshots/03_ml_forecast_result.png" alt="Rendered Holt-Winters spending forecast chart with percentile band" loading="lazy" /><figcaption>Holt-Winters spending forecast</figcaption></figure>
-    <figure><img src="./assets/screenshots/04_debt_optimization.png" alt="Debt optimization tool with donut chart of debt breakdown" loading="lazy" /><figcaption>Avalanche vs. Snowball optimizer</figcaption></figure>
-  </div>
-
-  <div class="star-grid reveal">
-    <div class="star-card">
-      <span class="star-letter">S</span>
-      <h4>Situation</h4>
-      <p>Mainstream budgeting tools are built for US financial products and ignore Canadian tax-advantaged accounts (TFSA/RRSP/FHSA/RESP) — and this project doubled as the required capstone for a UBC full-stack bootcamp.</p>
-    </div>
-    <div class="star-card">
-      <span class="star-letter">T</span>
-      <h4>Task</h4>
-      <p>Design, build, secure, and deploy a production-grade, multi-service platform end to end — accounts, imports, budgeting, debt payoff, Canadian registered accounts, and an ML insights layer.</p>
-    </div>
-    <div class="star-card">
-      <span class="star-letter">A</span>
-      <h4>Action</h4>
-      <p>Built a React/TypeScript frontend and Express/MongoDB API with session auth, a separate FastAPI ML microservice, CSV/PDF import, a debt-payoff engine, and a security hardening pass before launch.</p>
-    </div>
-    <div class="star-card">
-      <span class="star-letter">R</span>
-      <h4>Result</h4>
-      <p>A live, two-service production deployment covering 10 realistic financial personas — satisfying the capstone requirement while functioning as a genuine consumer-grade product today.</p>
-    </div>
-  </div>
-
-  <div class="result-strip reveal">
-    <div class="result-stat"><span class="num tabular">66</span><span class="lbl">Git commits / 9 phases</span></div>
-    <div class="result-stat"><span class="num tabular">2</span><span class="lbl">Coordinated Render services</span></div>
-    <div class="result-stat"><span class="num tabular">10</span><span class="lbl">Seeded demo personas</span></div>
-    <div class="result-stat"><span class="num tabular">3</span><span class="lbl">ML models in production</span></div>
-  </div>
-
-  <div class="talk-points reveal">
-    <h4>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>
-      Interview talking points
-    </h4>
-    <ul>
-      <li>Why the ML layer is a separate FastAPI service instead of embedded in the Node API — independent deploy cadence and clean separation of concerns.</li>
-      <li>Walking through a real production incident: a Recharts v3 / Express 5 version mismatch broke the build, and how it was diagnosed and fixed.</li>
-      <li>Security hardening (rate limiting, at-rest token encryption for Plaid access) was an explicit final phase — and what I'd build in from day one next time.</li>
-      <li>Domain-specific product judgment: modeling Canadian tax-advantaged accounts instead of cloning a generic US budgeting tutorial.</li>
-    </ul>
-  </div>
-</article>
-
-<!-- ---- CASE STUDY 2: Cultura ---- -->
-<article class="project wrap" id="project-cultura">
-  <div class="project-head reveal">
-    <div>
-      <div class="project-tag-row">
-        <span class="tag tag--tier-advanced">Architecture &amp; DevOps</span>
-        <span class="tag tag--tech">Nx · pnpm</span>
-        <span class="tag tag--tech">React 19 · React Native</span>
-        <span class="tag tag--tech">Fastify 5 · Vite 7</span>
-      </div>
-      <h3 class="project-title">Cultura recommendation monorepo</h3>
-      <p class="project-tagline">Fixing the build-governance problem in a five-platform Nx monorepo before writing another line of feature code.</p>
-    </div>
-  </div>
-
-  <div class="diagram reveal">
-    <div class="diagram-label">Monorepo structure &amp; build target mapping (real, as configured)</div>
-    <div class="tree-diagram">
-      <div class="tree-col">
-        <h5>apps/</h5>
-        <div class="tree-item">Cultura (core app)<span class="pct">20%</span><div class="progress-bar"><span style="width:20%"></span></div><span class="plugin">@nx/vite</span></div>
-        <div class="tree-item">Web<span class="pct">10%</span><div class="progress-bar"><span style="width:10%"></span></div><span class="plugin">@nx/vite</span></div>
-        <div class="tree-item">Smart TV<span class="pct">60%</span><div class="progress-bar"><span style="width:60%"></span></div><span class="plugin">@nx/vite</span></div>
-        <div class="tree-item">Mobile<span class="pct">40%</span><div class="progress-bar"><span style="width:40%"></span></div><span class="plugin">@nx/react-native</span></div>
-        <div class="tree-item">IoT Player<span class="pct">5%</span><div class="progress-bar"><span style="width:5%"></span></div><span class="plugin">@nx/vite</span></div>
-      </div>
-      <div class="tree-col">
-        <h5>services/</h5>
-        <div class="tree-item">Media API<span class="pct">~50%</span><div class="progress-bar"><span style="width:50%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
-        <div class="tree-item">Playback API<span class="pct">~50%</span><div class="progress-bar"><span style="width:50%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
-        <div class="tree-item">Auth (stubbed)<span class="pct">~10%</span><div class="progress-bar"><span style="width:10%"></span></div><span class="plugin">@nx/esbuild + @nx/node</span></div>
-      </div>
-      <div class="tree-col">
-        <h5>packages/</h5>
-        <div class="tree-item">Shared libraries<span class="pct">~30%</span><div class="progress-bar"><span style="width:30%"></span></div><span class="plugin">@nx/js:tsc</span></div>
-        <div class="tree-item">nx.json<span class="pct">baseline</span><div class="progress-bar"><span style="width:100%"></span></div><span class="plugin">shared target defaults</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="star-grid reveal">
-    <div class="star-card"><span class="star-letter">S</span><h4>Situation</h4><p>A four-platform recommendation system (Web, Mobile, Smart TV, IoT) on an Nx + pnpm monorepo had every project's build targets left empty — <code class="font-mono" style="font-size:var(--text-xs)">targets: {}</code> — so `nx build/serve/test/lint` couldn't run reliably anywhere.</p></div>
-    <div class="star-card"><span class="star-letter">T</span><h4>Task</h4><p>Fix the build-governance problem first: define a canonical, repeatable target set per project type before any further feature work.</p></div>
-    <div class="star-card"><span class="star-letter">A</span><h4>Action</h4><p>Mapped <span class="font-mono">@nx/esbuild</span>/<span class="font-mono">@nx/node</span> to Fastify services, <span class="font-mono">@nx/vite</span> to React apps, <span class="font-mono">@nx/react-native</span> to mobile, and <span class="font-mono">@nx/js:tsc</span> to shared libraries, centralizing defaults in <span class="font-mono">nx.json</span>.</p></div>
-    <div class="star-card"><span class="star-letter">R</span><h4>Result</h4><p>A validated build-standardization plan — confirmed via <span class="font-mono">nx graph</span> and <span class="font-mono">nx run-many</span> — that unblocks consistent build/serve/test/lint across a five-platform codebase.</p></div>
-  </div>
-
-  <div class="talk-points reveal">
-    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
-    <ul>
-      <li>Recognizing that the feature wasn't blocked by missing code — it was blocked by missing build infrastructure — and fixing the foundation first.</li>
-      <li>Real Nx/monorepo experience, a tool increasingly common at mid-size and growing engineering orgs, beyond a single-app Vite/CRA setup.</li>
-      <li>Comfortable giving an honest, granular completion estimate per subsystem instead of one vague "in progress."</li>
-    </ul>
-  </div>
-</article>
-
-<!-- ---- CASE STUDY 3: Raspberry Pi Smart TV Kiosk ---- -->
-<article class="project wrap" id="project-kiosk">
-  <div class="project-head reveal">
-    <div>
-      <div class="project-tag-row">
-        <span class="tag tag--tier-moderate">IoT &amp; hardware</span>
-        <span class="tag tag--tech">Raspberry Pi 5 · LibreELEC/Kodi</span>
-        <span class="tag tag--tech">FastAPI · scikit-learn</span>
-        <span class="tag tag--tech">Docker Compose</span>
-      </div>
-      <h3 class="project-title">Smart TV kiosk dashboard</h3>
-      <p class="project-tagline">A self-hosted, remote-and-touch-navigable recommendation dashboard for a TV, running entirely on a Raspberry Pi.</p>
-    </div>
-  </div>
-
-  <div class="diagram reveal">
-    <div class="diagram-label">Reference architecture (hardware → services → playback)</div>
-    <div class="flow-row">
-      <div class="flow-node"><span class="n-title">TV remote</span><span class="n-sub">HDMI-CEC input</span></div>
-      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="flow-node accent"><span class="n-title">React kiosk UI</span><span class="n-sub">Chromium fullscreen, 5-col grid</span></div>
-      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="flow-node"><span class="n-title">Node/Express API</span><span class="n-sub">/recommend, /play-rec</span></div>
-      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="flow-node teal"><span class="n-title">FastAPI recommender</span><span class="n-sub">scikit-learn, MongoDB</span></div>
-    </div>
-    <div style="height:var(--space-4)"></div>
-    <div class="flow-row">
-      <div class="flow-node amber"><span class="n-title">Kodi / LibreELEC</span><span class="n-sub">JSON-RPC: Player.Open</span></div>
-      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="flow-node"><span class="n-title">Raspberry Pi 5</span><span class="n-sub">Docker Compose orchestration</span></div>
-      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="flow-node"><span class="n-title">TV output</span><span class="n-sub">4K / 16:9 playback</span></div>
-    </div>
-  </div>
-
-  <div class="star-grid reveal">
-    <div class="star-card"><span class="star-letter">S</span><h4>Situation</h4><p>Proprietary Smart TV app stores are closed ecosystems — they won't combine a personal recommendation engine with unified playback control across both touch and remote input.</p></div>
-    <div class="star-card"><span class="star-letter">T</span><h4>Task</h4><p>Design and prototype a self-hosted kiosk dashboard, running on a Raspberry Pi, navigable by both touch and a standard TV remote via HDMI-CEC.</p></div>
-    <div class="star-card"><span class="star-letter">A</span><h4>Action</h4><p>Chose Pi 5 + LibreELEC/Kodi + Node/Express + React (Chromium kiosk) + FastAPI/scikit-learn, wired the UI to Kodi's JSON-RPC API, and mapped CEC remote input to a five-column focus-driven grid.</p></div>
-    <div class="star-card"><span class="star-letter">R</span><h4>Result</h4><p>A documented, end-to-end reference architecture validated against real hardware limits (Pi 4 is too weak for 4K transcoding; LibreELEC needs a Chromium/WebView layer for a true kiosk UI) — not assumed to "just work."</p></div>
-  </div>
-
-  <div class="talk-points reveal">
-    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
-    <ul>
-      <li>Hardware-aware software design — reasoning through CEC remote mapping and 4K transcoding limits before writing UI code.</li>
-      <li>Range beyond typical web-only portfolios: IoT protocols (Kodi JSON-RPC, HDMI-CEC), not just REST APIs.</li>
-      <li>The same "Node + Python recommender" split shows up here and in Cultura — a consistent, reusable architectural instinct.</li>
-    </ul>
-  </div>
-</article>
-
-<!-- ---- CASE STUDY 4: MIT IDSS Data Science & ML coursework ---- -->
-<article class="project wrap" id="project-mit-dsml">
-  <div class="project-head reveal">
-    <div>
-      <div class="project-tag-row">
-        <span class="tag tag--tier-moderate">Applied data science &amp; ML</span>
-        <span class="tag tag--tech">Python · pandas · scikit-learn</span>
-        <span class="tag tag--tech">surprise (SVD/CF)</span>
-        <span class="tag tag--tech">GridSearchCV</span>
-      </div>
-      <h3 class="project-title">MIT IDSS coursework, applied: three ML projects</h3>
-      <p class="project-tagline">Graduate-level data science and machine learning, from the MIT IDSS &ldquo;Data Science and Machine Learning: Making Data-Driven Decisions&rdquo; program (completed via the MIT Schwarzman College of Computing pathway, May 2024) — a 12-week curriculum, three of its projects below.</p>
-    </div>
-  </div>
-
-  <div class="diagram reveal">
-    <div class="diagram-label">12-week curriculum</div>
-    <div class="curriculum-strip">
-      <span>Wks 1&ndash;2 &middot; Foundations of Data Science (Python / stats)</span>
-      <span>Wks 3&ndash;4 &middot; Unstructured Data (clustering / PCA)</span>
-      <span>Wks 5&ndash;6 &middot; Regression &amp; Prediction</span>
-      <span>Wks 7&ndash;8 &middot; Classification &amp; Hypothesis Testing</span>
-      <span>Wks 9&ndash;10 &middot; Deep Learning</span>
-      <span>Wk 11 &middot; Recommendation Systems</span>
-      <span>Wk 12 &middot; Networking / Graphical Models + GenAI modules</span>
-    </div>
-  </div>
-
-  <div class="dsml-grid reveal">
-    <div class="dsml-card">
-      <span class="dsml-role">Project &middot; Foundations of Data Science</span>
-      <h4>FoodHub delivery data — exploratory analysis</h4>
-      <p><strong>Situation:</strong> FoodHub, an NYC food-delivery aggregator, needed to understand demand patterns across 1,898 orders and 9 attributes (cuisine, cost, day of week, ratings, prep/delivery time).</p>
-      <p><strong>Task:</strong> Answer specific business questions — which cuisines and days drive volume, how prep and delivery time distribute, and what ratings reveal about service quality.</p>
-      <p><strong>Action:</strong> Full EDA in pandas/matplotlib/seaborn — univariate and bivariate analysis, cuisine-by-day demand breakdowns, and delivery/prep-time distribution analysis.</p>
-      <div class="dsml-result"><strong>Result:</strong> Clear, data-backed answers on demand concentration, service-time bottlenecks, and rating drivers — the same analysis pattern used for any operational dataset.</div>
-    </div>
-    <div class="dsml-card">
-      <span class="dsml-role">Project &middot; Classification &amp; Hypothesis Testing</span>
-      <h4>ExtraaLearn — lead-conversion classification</h4>
-      <p><strong>Situation:</strong> ExtraaLearn, an EdTech company, had 4,612 leads and needed to predict which would convert to paying customers, based on engagement signals like time on site and referral source.</p>
-      <p><strong>Task:</strong> Build and compare classification models to identify high-probability leads and surface the strongest predictive features for the sales team.</p>
-      <p><strong>Action:</strong> Trained and tuned Logistic Regression, Random Forest, and SVM (RBF kernel) via GridSearchCV; ranked feature importance using logistic-regression coefficients/odds.</p>
-      <div class="dsml-result"><strong>Result:</strong> SVM (RBF) delivered the best recall among all models; <strong>time spent on website</strong> and first-interaction channel emerged as the top conversion drivers — directly actionable for a sales/marketing team.</div>
-    </div>
-    <div class="dsml-card">
-      <span class="dsml-role">Project &middot; Recommendation Systems</span>
-      <h4>Amazon Electronics — recommendation engine</h4>
-      <p><strong>Situation:</strong> A large-scale Amazon Electronics ratings dataset needed a recommendation approach that could suggest relevant products at scale.</p>
-      <p><strong>Task:</strong> Build and evaluate multiple recommendation strategies — rank-based, collaborative filtering, and matrix factorization — and tune the strongest for accuracy.</p>
-      <p><strong>Action:</strong> Implemented rank-based, user-user CF, item-item CF, and SVD (matrix factorization) models with the <code>surprise</code> library, tuning via GridSearchCV.</p>
-      <div class="dsml-result"><strong>Result:</strong> Tuned user-user KNN cut RMSE from a 1.84 baseline to <strong>1.11</strong>, with 0.858 precision and 0.644 F1 — the direct precursor to the recommendation logic used in the Cultura monorepo above.</div>
-    </div>
-  </div>
-
-  <div class="talk-points reveal">
-    <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.97-4.03 9-9 9-1.5 0-2.9-.37-4.14-1.02L3 21l1.05-3.68A8.96 8.96 0 0 1 3 12c0-4.97 4.03-9 9-9s9 4.03 9 9z"/></svg>Interview talking points</h4>
-    <ul>
-      <li>Comfortable across the full ML toolkit — EDA, classification, hypothesis testing, and collaborative-filtering recommenders — not just one narrow specialty.</li>
-      <li>Grounded in real evaluation discipline: baseline-vs-tuned metrics (RMSE, precision, recall, F1), not just "I trained a model."</li>
-      <li>Direct line from coursework to production: the recommendation-systems project fed straight into the Cultura monorepo's real recommendation logic.</li>
-    </ul>
-  </div>
-</article>
-
 <!-- ================= CONTINUOUS LEARNING ================= -->
 <section class="section wrap" id="learning">
   <div class="section-head reveal">
@@ -541,7 +352,7 @@
     <div class="timeline-item">
       <span class="timeline-tag">Completed · May 2024</span>
       <h4>MIT IDSS Professional Certificate — Data Science and Machine Learning: Making Data-Driven Decisions</h4>
-      <p>12-week program via the MIT Schwarzman College of Computing pathway, covering Python/stats foundations, unstructured data, regression, classification, deep learning, recommendation systems, and graphical models. Three applied projects from the program are broken down in the case study above — the foundation that led directly into the ML microservice built for My_PersFin_App.</p>
+      <p>12-week program via the MIT Schwarzman College of Computing pathway, covering Python/stats foundations, unstructured data, regression, classification, deep learning, recommendation systems, and graphical models. Three applied projects from the program are broken down in the <a href="./projects/mit-dsml.html">MIT IDSS project</a> — the foundation that led directly into the ML microservice built for My_PersFin_App.</p>
     </div>
     <div class="timeline-item">
       <span class="timeline-tag">Completed</span>
@@ -551,7 +362,7 @@
     <div class="timeline-item">
       <span class="timeline-tag">In progress</span>
       <h4>UBC Extended Learning — Full Stack Software Development &amp; DevOps</h4>
-      <p>Capstone project is My_PersFin_App, above — currently finishing out the program's final requirements.</p>
+      <p>Capstone project is <a href="./projects/persfin.html">My_PersFin_App</a> — currently finishing out the program's final requirements.</p>
     </div>
     <div class="timeline-item future">
       <span class="timeline-tag">Next · 0&ndash;6 months</span>

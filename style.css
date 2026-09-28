@@ -368,6 +368,39 @@ a {
   50% { opacity: 0.35; }
 }
 
+.hero-identity {
+  display: flex;
+  align-items: center;
+  gap: clamp(var(--space-4), 2.5vw, var(--space-6));
+}
+
+/* Circular avatar sized to the name's cap height; initials show until the photo loads */
+.hero-avatar {
+  position: relative;
+  flex: none;
+  width: clamp(64px, 3rem + 4vw, 104px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 0.9rem + 1.2vw, 2rem);
+  color: var(--color-primary);
+  background: var(--color-primary-highlight);
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 0 0 2px var(--color-primary), var(--shadow-md);
+  overflow: hidden;
+}
+.hero-avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .hero-name {
   font-size: var(--text-hero);
   font-weight: 700;
